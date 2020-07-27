@@ -1,0 +1,367 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+main {
+  padding-bottom: 20rem;
+  padding: 0 2rem;
+}
+.navbar {
+  color: #3d2514;
+  font-family: 'Bebas Neue Bold';
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "Home" */
+  letter-spacing: 4.17px;
+}
+.header {
+  position: relative;
+
+  height: 110vh;
+  background-color: #ffc045;
+
+  background-image: url(../img/Rectangle.png);
+  background-size: cover;
+  background-position: top;
+
+  &__logo-box {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__logo {
+    width: 263px;
+    height: 58px;
+  }
+  &__delivery {
+    &-text {
+      margin-right: 4rem;
+      color: #3d2514;
+      font-family: Montserrat;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 70.83px;
+    }
+    &-logo {
+      width: 41px;
+      height: 33px;
+    }
+  }
+  &__img {
+    margin-top: 5%;
+  }
+
+  &__text {
+    margin-top: 20%;
+    margin-left: 2rem;
+    &--main {
+      display: inline-block;
+      /* Style for "It is a go" */
+
+      padding-inline-start: 10px;
+      padding-inline-end: 10px;
+      color: #3d2514;
+
+      border: dashed;
+      font-family: 'Bebas Neue Regular';
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32.85px;
+      text-transform: uppercase;
+    }
+    &--sub {
+      &-top {
+        text-shadow: 4px 5px 0 #fee8bc;
+        color: #3d2514;
+        font-family: 'Alfa Slab One';
+        font-size: 15vmin;
+        font-weight: 400;
+        line-height: 61.75px;
+        text-transform: uppercase;
+      }
+      &-bottom {
+        text-shadow: 4px 5px 0 #fee8bc;
+        color: #3d2514;
+        font-family: 'Alfa Slab One';
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 61.75px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.burger-card {
+  padding: 0 10%;
+}
+.btn {
+  &__red {
+    color: #ffffff;
+    font-family: 'Alfa Slab One';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-transform: uppercase;
+
+    background-color: #bf2222;
+  }
+  &__yellow {
+    background-color: #ffc045;
+    color: #3d2514;
+    font-family: 'Bebas Neue Bold';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-transform: uppercase;
+
+    &-text {
+      color: #3d2514;
+      font-family: 'Bebas Neue Bold';
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 37.5px;
+      text-transform: uppercase;
+    }
+  }
+}
+.burger-items {
+  margin: 0 2rem;
+  &__heading-main {
+    margin-bottom: 3rem;
+    color: #3d2514;
+    font-family: 'Alfa Slab One';
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-transform: uppercase;
+  }
+  &__heading-sub {
+    margin: 0 10rem;
+    color: #3d2514;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 29.17px;
+  }
+}
+.sandwich {
+  margin-top: 5rem;
+  &__text-main {
+    color: #3d2514;
+    font-family: 'Bebas Neue Bold';
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-transform: uppercase;
+  }
+  &__text-sub {
+    color: #3d2514;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response-logo {
+    width: 150%;
+    height: 150%;
+    margin-top: 1rem;
+  }
+}
+.test {
+  color: #3d2514;
+  font-family: 'Alfa Slab One';
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 45.83px;
+  text-transform: uppercase;
+}
+
+.events {
+  margin: 5rem;
+  &__card {
+    box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    padding: 7rem;
+    &-body {
+      &--title {
+        &-main {
+          color: #3d2514;
+          font-family: 'Alfa Slab One';
+          font-size: 42px;
+          font-weight: 400;
+          line-height: 45.83px;
+          text-transform: uppercase;
+        }
+        &-sub {
+          color: #3d3d3d;
+          font-family: 'Bebas Neue Bold';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 45.83px;
+          text-transform: uppercase;
+          /* Text style for "D, iscover" */
+          letter-spacing: 1.75px;
+        }
+      }
+      &--text {
+        margin-top: 3rem;
+        color: #3d3d3d;
+        font-family: Montserrat;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 33.33px;
+      }
+      &--indicator {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.reservation {
+  position: relative;
+  padding: 10rem 0;
+  z-index: 2;
+  &__form {
+    z-index: 1;
+    padding: 0 30rem;
+    margin-top: 2rem;
+    &-text {
+      margin-top: 2rem;
+      border-radius: 5px;
+      border: 1px solid #bebebe;
+      color: #3d3d3d;
+      font-family: 'Bebas Neue Regular';
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 45.83px;
+    }
+    &-btn {
+      z-index: 1;
+      margin-top: 2rem;
+      border-radius: 5px;
+      color: #ffffff;
+      font-family: 'Alfa Slab One';
+      font-size: 21px;
+      font-weight: 400;
+
+      text-transform: uppercase;
+    }
+    &--img {
+      z-index: 0;
+      position: absolute;
+      &-dish {
+        top: 40%;
+        left: 80%;
+      }
+      &-Bottle {
+        top: 30%;
+        left: 5%;
+      }
+      &-Burger {
+        top: -13%;
+        left: -6%;
+      }
+    }
+  }
+}
+.footer {
+  padding: 0 4rem;
+  padding-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 20rem;
+  background-image: url(../img/footer-img.png);
+  background-size: cover;
+  &__text {
+    margin-top: 5rem;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__info {
+    margin-left: 1.5rem;
+    color: #ffffff;
+    font-family: 'Bebas Neue Bold';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 37.5px;
+  }
+  &__social {
+    margin-top: 20rem;
+  }
+  &__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response-text {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response-text-sm {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .response-margin {
+    margin: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .response-padding {
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .response-padding-ipad {
+    padding: 1rem 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response-padding-mobile {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response__header-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .response-btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .response-header {
+    height: 100vh;
+  }
+}
