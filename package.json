@@ -9,11 +9,17 @@
     "rfs": "^9.0.3"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "node-sass": "^4.14.1",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass sass/main.scss css/style.css -w "
+    "compile:sass": "node-sass sass/main.scss css/style.css -w ",
+    "usemin": " usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run usemin"
   },
   "author": "",
   "license": "ISC"
